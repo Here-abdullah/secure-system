@@ -8,6 +8,7 @@ app.secret_key = 'muet_security_secret' # Session secure karne ke liye
 USERS = {
     "admin": "password123",
     "student1": "muet2026",
+    "worker1": "cyber@"
     "abdullah": "cybersecure"
 }
 
