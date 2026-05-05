@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head><title>Encryption Service</title></head>
+<body style="text-align:center; padding:50px; font-family:sans-serif;">
+    <h2>Welcome, {{ user }}! 🚀</h2>
+    <p>This is your premium <b>SaaS Encryption Tool</b>.</p>
+    <form method="post">
+        <textarea name="message" placeholder="Enter secret message..." rows="4" cols="50"></textarea><br><br>
+        <input type="submit" value="Encrypt Now">
+    </form>
+    
+    {% if result %}
+    <div style="margin-top:20px; background:#e0f7fa; padding:10px;">
+        <p><b>Original:</b> {{ original }}</p>
+        <p><b>Encrypted (SaaS Output):</b> <code style="color:red;">{{ result }}</code></p>
+    </div>
+    {% endif %}
+    <br><a href="/logout">Logout</a>
+</body>
+</html>
